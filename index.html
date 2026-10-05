@@ -8,10 +8,10 @@
 </style></head><body><div id="app"></div>
 <script>
 const roles={
- Owner:['Dashboard','POS/Kasir','Produk & Stok','Purchasing','Supplier','Kas & Bank','Piutang','Hutang','Akuntansi','Member','HR & Payroll','Laporan','Pengaturan'],
- Manager:['Dashboard','POS/Kasir','Produk & Stok','Purchasing','Supplier','Kas & Bank','Piutang','Hutang','Laporan'],
- Kasir:['Dashboard','POS/Kasir','Member'],
- Gudang:['Dashboard','Produk & Stok','Purchasing','Supplier']
+ owner:['Dashboard','POS/Kasir','Produk & Stok','Purchasing','Supplier','Kas & Bank','Piutang','Hutang','Akuntansi','Member','HR & Payroll','Laporan','Pengaturan'],
+ manager:['Dashboard','POS/Kasir','Produk & Stok','Purchasing','Supplier','Kas & Bank','Piutang','Hutang','Laporan'],
+ kasir:['Dashboard','POS/Kasir','Member'],
+ gudang:['Dashboard','Produk & Stok','Purchasing','Supplier']
 };
 let user=localStorage.getItem('erpUser')||'';
 let products=JSON.parse(localStorage.getItem('erpProducts')||'null')||[
